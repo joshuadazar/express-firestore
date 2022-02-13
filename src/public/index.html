@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Contact form</title>
+</head>
+<body>
+    <form action="/new-contact" method="post">
+      <div class="input-field col s12 l6">
+        <input type="text" name="firstname" class="validate">
+        <label for="firstname">Primer Nombre</label>
+      </div>
+      <div class="input-field col s12 l6">
+        <input type="text" name="lastname" class="validate">
+        <label for="lastname">Segundo Nombre</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="email" name="email" class="validate">
+        <label for="email" data-error="Correo Inválido" data-success="Correcto">Email</label>
+      </div>
+      <div class="input-field col s12">
+        <input type="number" name="phone" class="validate">
+        <label for="phone" data-error="Correo Inválido" data-success="Correcto">phone</label>
+      </div>
+      <button class="btn waves-effect waves-light blue" type="submit" name="action">Enviar
+        <i class="material-icons right">send</i>
+      </button>
+    </form>
+</body>
+</html>
